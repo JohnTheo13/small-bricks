@@ -1,0 +1,15 @@
+node_modules
+.storybook
+**/*Icons
+**/*FancyLoader
+**/*.md
+package.json
+**/*.json
+**/*.css
+**/*.svg
+**/*.png
+**/*.hbs
+**/*.jpg
+.gitignore
+src/ReactSvg/*
+yarn-lock

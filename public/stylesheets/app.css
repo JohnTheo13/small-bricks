@@ -1,0 +1,66 @@
+
+.input-group {
+  width:100%;
+}
+
+input::placeholder {
+  color: #BFBFBF;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #BFBFBF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #BFBFBF;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #BFBFBF;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #BFBFBF;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BFBFBF;
+}
+
+/*FORM*/
+
+.form-group {
+  position:relative;
+}
+
+.form-control:focus {
+  border-color: #00C7B1 !important;
+  border-width: 2px !important;
+  outline: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  opacity: 0.3;
+}
+
+
+/* TOOLTIP */
+
+.tooltip-inner {
+  background-color: #909090;
+  opacity: 95%;
+  color: #FDFDFD; }
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #909090;
+  opacity: 95%; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #909090;
+  opacity: 95%; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #909090;
+  opacity: 95%; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #909090;
+  opacity: 95%; }
