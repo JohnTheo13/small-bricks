@@ -1,28 +1,28 @@
-const path = require('path')
-
-const APP_DIR = path.resolve(__dirname, 'src')
-const BUILD_DIR = path.resolve(__dirname, 'build')
-
-const config = {
-  entry: `${APP_DIR}/index.js`,
+var path = require('path');
+module.exports = {
+  entry: './src/index.js',
   output: {
-    path: BUILD_DIR,
+    path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    libraryTarget: 'commonjs2'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'stage-0'],
-        },
-      },
-    ],
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|bower_components|build)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'stage-3'],
+            plugins: ['babel-plugin-transform-class-properties']
+          }
+        }
+      }
+    ]
   },
-}
-
-module.exports = config
+  externals: {
+    'react': 'commonjs react'
+  }
+};

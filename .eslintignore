@@ -14,3 +14,4 @@ package.json
 .gitignore
 src/ReactSvg/*
 yarn-lock
+webpack.config.js
