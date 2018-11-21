@@ -1,11 +1,11 @@
-export theme from './theme'
+export { default as theme } from './theme'
 export {
   Header,
   P,
   Label,
 } from './Typography'
 
-export Icon from './ReactSvgs'
+export { default as Icon } from './ReactSvgs'
 export {
   Button,
   CircularButton,
@@ -20,10 +20,10 @@ export { Input, TextArea } from './Inputs'
 export { Border, BorderWithText } from './Borders'
 export { PopoverDefault } from './Popovers'
 
-export A from './Link'
-export Pagination from './Pagination'
-export Image from './Image'
-export Alert from './Alert'
-export AlertModalContent from './AlertModalContent'
-export Field from './Field'
-export PointingTitle from './Titles/PointingTitle'
+export { default as A } from './Link'
+export { default as Pagination } from './Pagination'
+export { default as Image } from './Image'
+export { default as Alert } from './Alert'
+export { default as AlertModalContent } from './AlertModalContent'
+export { default as Field } from './Field'
+export { default as PointingTitle } from './Titles/PointingTitle'
