@@ -4,7 +4,7 @@
 
 ## Demo
 
-Check out the components [here](http://my-components.ksulourgeio.gr).
+Check out the components and how to use them [here](http://my-components.ksulourgeio.gr).
 
 ## Install
 ```bash
