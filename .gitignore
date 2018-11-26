@@ -2,3 +2,4 @@
 /storybook-static
 /build
 yarn.lock
+.npmingnore
