@@ -1,6 +1,6 @@
 {
   "name": "small-bricks",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "small reusable components",
   "main": "index.js",
   "author": "Ioannis Theodosiou <theodosioujohn88@gmail.com>",
@@ -18,8 +18,7 @@
     "lint:fix": "eslint src --fix; exit 0",
     "lint-staged": "lint-staged",
     "lint:css": "stylelint './src/**/*.js'",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "lint-staged": {
     "*": "eslint"
