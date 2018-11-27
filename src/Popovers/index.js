@@ -6,7 +6,7 @@ import { P } from '../index'
 const Popover = props => (
   <StyledPopOver tag={props.tag} placement={props.placement} >
     <span>
-      <img alt="info icon" src={`https://website-assets.imgix.net/icon/circle_${props.tag}.svg`} />
+      <img alt="info icon" src={`images/icons/circle_${props.tag}.svg`} />
     </span>
     <P noMargin bold>
       {props.heading}

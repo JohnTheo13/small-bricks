@@ -10,7 +10,7 @@ const StyledSpan = styled.span`
 
 const FeedbackInput = props => (
   <StyledSpan>
-    <img className={props.className} src={`https://website-assets.imgix.net/icon/${props.status}.svg`} alt="validation icon" />
+    <img className={props.className} src={`/images/icon/${props.status}.svg`} alt="validation icon" />
   </StyledSpan>
 )
 

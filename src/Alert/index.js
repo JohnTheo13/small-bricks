@@ -32,7 +32,7 @@ const Alert = (props) => {
   return (
     <AlertContainer {...props}>
       <span>
-        <Image tag="small" alt="small feedback icon" src={`https://website-assets.imgix.net/icon/circle_${status}.svg`} />
+        <Image tag="small" alt="small feedback icon" src={`images/icons/circle_${status}.svg`} />
       </span>
       {props.header && <P small bold status={props.status} >{props.header}</P>}
       {props.body && <P small status={props.status} >{props.body}</P>}

@@ -7,7 +7,7 @@ const FormControlStyled = StyledInput.extend`
   -webkit-appearance: none; /* stylelint-disable-line */
   -moz-appearance: none; /* stylelint-disable-line */
   appearance: none;
-  background-image: url('https://website-assets.imgix.net/icon/arrow_up_down.svg') !important;
+  background-image: url('images/icons/arrow_up_down.svg') !important;
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 50%;

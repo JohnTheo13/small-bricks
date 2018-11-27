@@ -15,3 +15,4 @@ package.json
 src/ReactSvg/*
 yarn-lock
 webpack.config.js
+index.js
