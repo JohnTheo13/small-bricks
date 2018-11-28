@@ -1,11 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import PhoneIcon from './Icons/PhoneIcon'
-import EmailIcon from './Icons/EmailIcon'
-import HelpIcon from './Icons/HelpIcon'
-import UserIcon from './Icons/UserIcon'
-import ChatIcon from './Icons/ChatIcon'
 import HamburgerIcon from './Icons/HamburgerIcon'
 import ExitIcon from './Icons/ExitIcon'
 import FlagIcon from './Icons/Flag'
@@ -13,33 +8,45 @@ import StarIcon from './Icons/StarIcon'
 import StopwatchIcon from './Icons/StopwatchIcon'
 import FilterIcon from './Icons/FilterIcon'
 import ArrowOpen from './Icons/ArrowOpen'
+import { Info, Error, Success, Warning } from './OutLined'
+import {
+  ARROW_OPEN,
+  HAMBURGER_ICON,
+  EXIT_ICON,
+  FLAG_ICON,
+  STAR_ICON,
+  STOPWATCH_ICON,
+  FILTER_ICON,
+  SUCCESS,
+  WARNING,
+  INFO,
+  ERROR,
+} from './IconNames'
 
 const path = (name) => {
   switch (name) {
-    case 'phone_icon':
-      return <PhoneIcon />
-    case 'email_icon':
-      return <EmailIcon />
-    case 'help_icon':
-      return <HelpIcon />
-    case 'user_icon':
-      return <UserIcon />
-    case 'chat_icon':
-      return <ChatIcon />
-    case 'hamburger_icon':
+    case HAMBURGER_ICON:
       return <HamburgerIcon />
-    case 'exit_icon':
+    case EXIT_ICON:
       return <ExitIcon />
-    case 'flag_icon':
+    case FLAG_ICON:
       return <FlagIcon />
-    case 'star_icon':
+    case STAR_ICON:
       return <StarIcon />
-    case 'stopwatch_icon':
+    case STOPWATCH_ICON:
       return <StopwatchIcon />
     case 'filter_icon':
       return <FilterIcon />
-    case 'arrow_open':
+    case ARROW_OPEN:
       return <ArrowOpen />
+    case ERROR:
+      return <Error />
+    case INFO:
+      return <Info />
+    case WARNING:
+      return <Warning />
+    case SUCCESS:
+      return <Success />
     default:
       return null
   }
@@ -56,6 +63,7 @@ const SimpleSvg = props => (
     className={props.className}
     onClick={props.onClick} onMouseOver={props.onMouseOver} // eslint-disable-line
     onMouseOut={props.onMouseOut} // eslint-disable-line
+    height={props.viewBox.split(' ')[3]} // eslint-disable-line
   >
     {path(props.name)}
   </StyledSvg>

@@ -1,23 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { P, Image, theme } from '../index'
+import { P, Icon, theme } from '../index'
 
 const AlertContainer = styled.div`
   position: relative;
   border-radius: ${theme.borderRadius};
   padding: ${theme.whitespaceS};
   font-size: ${theme.fontSizesS};
-  margin-bottom: ${theme.whitespaceS};
   ${props => `border: ${theme[props.status]} 1px solid;`}
   ${props => `background-color: ${theme[`${props.status}Light`]};`}
   ${props => `color: ${theme[`${props.status}Medium`]};`}
-
-  > span > img {
-    margin-right: ${theme.whitespaceXs};
-    display: inline;
-  }
-
+    > svg {
+      float: left;
+      margin: -3.5px 6px 0 0;
+    }
   > p {
     display: inline;
     ${props => `color: ${theme[`${props.status}Medium`]};`}
@@ -31,9 +28,7 @@ const Alert = (props) => {
   const { status } = props
   return (
     <AlertContainer {...props}>
-      <span>
-        <Image tag="small" alt="small feedback icon" src={`images/icons/circle_${status}.svg`} />
-      </span>
+      <Icon name={status} viewBox="0 0 30 30" />
       {props.header && <P small bold status={props.status} >{props.header}</P>}
       {props.body && <P small status={props.status} >{props.body}</P>}
     </AlertContainer>

@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledPopOver from './styles'
-import { P } from '../index'
+import { P, Icon } from '../index'
 
 const Popover = props => (
   <StyledPopOver tag={props.tag} placement={props.placement} >
-    <span>
-      <img alt="info icon" src={`images/icons/circle_${props.tag}.svg`} />
-    </span>
+    <Icon name={props.tag} viewBox="0 0 28 28" />
     <P noMargin bold>
       {props.heading}
     </P>
