@@ -1,6 +1,6 @@
 {
   "name": "small-bricks",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "description": "small reusable components",
   "main": "index.js",
   "author": "Ioannis Theodosiou <theodosioujohn88@gmail.com>",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start-storybook -s ./public -p 6789 ",
+    "start": "start-storybook -s ./public -p 6767 ",
     "build": "webpack",
     "prepublish": "npm run lint && yarn run build",
     "lint": "eslint src; exit 0",

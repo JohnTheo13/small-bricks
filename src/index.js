@@ -16,7 +16,7 @@ export {
 } from './Buttons'
 
 export { Tag, OverlayTag, RatingTag } from './Tags'
-export { Input, TextArea } from './Inputs'
+export { Input, TextArea, SelectInput } from './Inputs'
 export { Border, BorderWithText } from './Borders'
 export { PopoverDefault } from './Popovers'
 

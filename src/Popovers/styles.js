@@ -92,14 +92,13 @@ const StyledPopOver = styled.div`
   > p {
     padding-bottom: 0;
     color: ${props => props.theme[`${props.tag}Medium`]};
-    display: box;
+    display: block;
+    line-height: 2.8rem;
   }
 
-  > span > img {
-    margin-right: ${props => props.theme.whitespaceXs};
-    width: 18px;
-    margin-top: 3px;
+  > svg {
     float: left;
+    margin-right: 4px;
   }
 
   @media (max-width: 990px): {

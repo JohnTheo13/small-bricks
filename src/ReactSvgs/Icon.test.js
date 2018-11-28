@@ -6,28 +6,8 @@ import Icon from './index'
 
 const test = () => (
   describe('Inputs', () => {
-    const wrapper = mount(<Icon name="phone_icon" />)
+    const wrapper = mount(<Icon name="hamburger_icon" />)
     it('should render phone svg', () => {
-      expect(wrapper.find('SimpleSvg').props().name).to.equal('phone_icon')
-    })
-    it('should render email svg', () => {
-      wrapper.setProps({ name: 'email_icon' })
-      expect(wrapper.find('SimpleSvg').props().name).to.equal('email_icon')
-    })
-    it('should render help svg', () => {
-      wrapper.setProps({ name: 'help_icon' })
-      expect(wrapper.find('SimpleSvg').props().name).to.equal('help_icon')
-    })
-    it('should render user svg', () => {
-      wrapper.setProps({ name: 'user_icon' })
-      expect(wrapper.find('SimpleSvg').props().name).to.equal('user_icon')
-    })
-    it('should render chat svg', () => {
-      wrapper.setProps({ name: 'chat_icon' })
-      expect(wrapper.find('SimpleSvg').props().name).to.equal('chat_icon')
-    })
-    it('should render hamburger svg', () => {
-      wrapper.setProps({ name: 'hamburger_icon' })
       expect(wrapper.find('SimpleSvg').props().name).to.equal('hamburger_icon')
     })
     it('should render exit svg', () => {
