@@ -34,7 +34,7 @@ ReactDOM.render(
 
 ## Project setup
 1. to install the project locally
-1. run ```npm install```
+1. Clone the project
 1. run ```npm start``` to run storybook
 1. it will prompt you with localhost:port url, navigate to that url
 1. see more information on storybook on the (official website)[https://storybook.js.org/] or below
